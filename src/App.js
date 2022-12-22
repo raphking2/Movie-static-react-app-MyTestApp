@@ -11,7 +11,7 @@ function App() {
 
 //console.log(user.Search);
 
-const [searchField, setSearchField] = useState("");
+//const [searchField, setSearchField] = useState("");
 const [query, setQuery] = useState("");
 const [searchParam] = useState(["Title", "Type"]);
 
@@ -58,7 +58,7 @@ function search(items) {
     <>
     <div className="App">
       <div className="appName"><h4 className="appNameText"> <span className="spanT">MyTestApp</span></h4></div>
-      <img src={bg} width="100%"/>
+      <img src={bg} width="100%" alt=""/>
       <p className="bgText" >Watching something incredible.</p>
     
     <form className="formInput">
@@ -71,13 +71,14 @@ function search(items) {
     </form><br/>
     <div>
       <p className="category">Category Movie</p>
+      <img src={bg} width="30" height="30" alt=""/>
       
       {/* {user.map((data,id)=>(
         <li>{data}</li>
       ))} */}
       <h2 className="Testing">{search(user.Search)?.map(data => 
       <>
-      <img className="MovieImage" key={data.imdbID} src={data.Poster} width="150"/>
+      <img className="MovieImage" key={data.imdbID} src={data.Poster} width="150" alt=""/>
       
       </>
       )}</h2>
@@ -91,7 +92,7 @@ function search(items) {
       ))} */}
       <h2 className="Testing">{search(user.Search)?.map(data => 
       <>
-      <img className="MovieImage" key={data.imdbID} src={data.Poster} width="150"/>
+      <img className="MovieImage" key={data.imdbID} src={data.Poster} width="150" alt=""/>
       
       </>
       )}</h2>
