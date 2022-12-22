@@ -1,8 +1,9 @@
 .App {
   text-align: center;
+  background: linear-gradient(to bottom,rgb(19, 18, 51),rgba(138, 171, 119,0),rgb(71, 70, 68));
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +36,150 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.MovieImage{
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  padding-left: 30px;
+  
+}
+@media (max-width:728px) {
+  .MovieImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    padding-left: 30px;
+  }
+  
+}
+@media (min-width:634px) {
+  .MovieImage{
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    padding-left: 30px;
+  }
+  
+}
+.MovieTitle{
+  /* color: white; */
+  position: absolute;
+  padding-left: 20px;
+}
+.Testing{
+  /* display: flex; */
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+ 
+}
+.Testing2{
+  /* justify-content: center;
+  align-items: center; */
+padding-left: 30px;
+
+}
+.bgText{
+  position: absolute;
+  width: 490px;
+  height: 282px;
+  left: 2px;
+  top: 300px;
+  
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 94px;
+  letter-spacing: -0.05em;
+  
+  color: #FFFFFF;
+}
+@media ((max-width:728px)) {
+  .bgText{
+    position: absolute;
+  width: 273px;
+  height: 72px;
+  left: 20px;
+  top: 200px;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36.46px;
+  letter-spacing: -0.05em;
+  
+  color: #FFFFFF;
+  
+  }
+  
+}
+.bg{
+  width: 1440px;
+height: 550px;
+}
+.appName{
+ position: relative;
+  background: #292929;
+   height: 140px;
+  
+  
+}
+.appNameText{
+  box-sizing: border-box;
+
+position: absolute;
+width: 193px;
+height: 60px;
+left: 77px;
+top: 40px;
+color: #FFFFFF;
+border: 1px solid #FFFFFF;
+}
+.spanT{
+  /* position: absolute;
+width: 156.7px;
+height: 32.94px;
+left: 96px;
+top: 54px;
+
+background: #FFFFFF; */
+text-align: center;
+position: relative;
+top: 20px;
+}
+.category{
+  display: flex;
+  margin-left: 4px;
+}
+.formInput{
+  display: flex;
+  margin-left: 20px;
+
+}
+.searchD{
+  width: 300px;
+  height: 54px;
+  /* border: 1px solid black; */
+}
+@media (max-width:728px) {
+  .searchD{
+    position: relative;
+    width: 265px;
+    height: 34px;
+    top:20px;
+  }
+  
+}
+@media (min-width:634px) {
+  .searchD{
+    position: relative;
+    width: 680px;
+    height: 54px;
+    top:20px;
+  }
+  
 }
