@@ -31,7 +31,7 @@ const [searchParam] = useState(["Title", "Type"]);
 
 async function fetchData() {
   try {
-    const response = await axios.get("http://www.omdbapi.com/?s=movie&apikey=1228982e")
+    const response = await axios.get("https://www.omdbapi.com/?s=movie&apikey=1228982e")
     setUser(response.data)
   } catch (error) {
     console.error(error);
